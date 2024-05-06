@@ -1,0 +1,56 @@
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+
+<body id="body" style="display: flex; justify-content: center; align-items: center;">
+    <!--red container div-->
+    <div style="position: relative; display: inline-block;">
+        <!--smaller div-->
+        <div style="
+        position: absolute; 
+        display: flex; 
+        width: 100%; 
+        align-items: center;
+        padding: 20px;">
+            <!--player health-->
+
+            <div style="position: relative;width: 100%; height: 100px; display: flex; justify-content: flex-end;">
+                <div style="background-color: rgb(110, 108, 73); height: 100px; width: 100%;"></div>
+                <div id="player"
+                    style="position: absolute; background-color: rgb(169, 255, 21); top: 0; right: 0; bottom: 0; width: 100%;">
+                </div>
+            </div>
+            <!--timer-->
+            <div id="timer" style="
+            background-color: red; 
+            width: 250px; 
+            height: 250px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 150;">
+                0
+            </div>
+
+            <div style="position: relative;width: 100%; height: 100px;">
+                <!--enemy health-->
+                <div style="background-color: rgb(110, 108, 73);height: 100px;"></div>
+                <div id="enemy"
+                    style="position: absolute; background-color: rgb(169, 255, 21); top: 0; right: 0; left: 0; bottom: 0;">
+                </div>
+            </div>
+        </div>
+        <div id="display"
+            style="position: absolute; color: white; display: none; align-items: center; justify-content: center;  top: 0; left: 0; right: 0; bottom: 0;font-size: 150;">
+            Tie</div>
+        <canvas style="background-color: aqua;"></canvas>
+    </div>
+
+    <script src="fighting.js"></script>
+</body>
